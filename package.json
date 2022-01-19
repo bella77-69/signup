@@ -1,0 +1,19 @@
+{
+  "name": "signup",
+  "version": "1.0.0",
+  "description": "Sign Up Project with Node.js and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "bella77-69",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "Express": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
