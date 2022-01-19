@@ -6,6 +6,13 @@ dotenv.config({path:'./config/config.env'});
 
 const app = express();
 
+
+const logger = (req, res, next) => {
+    console.log(`${req.method} ${req.protocol}://${req.get('host')}${req.priginalUrl}`)
+    next();
+}
+app.use(logger)
+
 app.get('/', (req, res) => {
     res.status(200).json({success: true, msg: "Show all users"});
 });
